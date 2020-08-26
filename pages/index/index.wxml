@@ -6,5 +6,13 @@ hwllo world
 hwllo world
 </view>
 <button>an niu</button>
-
-
+<!-- 小程序都数据绑定 -->
+<view>{{name}}</view>
+<!-- 数组 -->
+<view>{{students[0].name}}</view>
+<!-- wx:for -->
+<view wx:for="{{students}}">{{item.id}}--{{item.name}}</view>
+<!-- 监听事件 -->
+<view>当前计数：{{counter}}</view>
+<button size="min" bindtap="handleBtnclick">+</button>
+<button size='min' bindtap="handleBtnclick2">-</button>
