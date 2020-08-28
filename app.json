@@ -9,7 +9,7 @@
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "雪霁",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundColor":"#ff0000"
   },
   "tabBar": {

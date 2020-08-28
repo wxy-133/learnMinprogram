@@ -1,7 +1,9 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+const app = getApp()//可以获取调用APP产生的示例对象
+console.log(app.globalData.age)
+const name = app.globalData.name;
+const age = app.globalData.age
 Page({
   data: {
     motto: 'Hello World',
@@ -24,16 +26,21 @@ Page({
       ],
       counter:0
       },
-      handleBtnclick(){
+ 
+   handleBtnclick(){
         this.setData({
           counter: this.data.counter+1
         })
       
       },
-      handleBtnclick2(){
+   handleBtnclick2(){
         this.setData({
           counter:this.data.counter-1
         })
+      },
+      handleGetInfo(event){
+           console.log(event)
+
       },
   //事件处理函数
   bindViewTap: function() {
