@@ -1,0 +1,12 @@
+<!--pages/text/text.wxml-->
+<!-- select -->
+<text>hello text\n</text>
+<text>heelo text\n</text>
+<text selectable>hello text\n</text>
+<!-- space -->
+<text space="nbsp">heello text\n</text>
+<text space="ensp">heello text\n</text>
+<text space="nmsp">heello text\n</text>
+<!-- decode -->
+<text decode>5 &gt;3 wxy</text>
+

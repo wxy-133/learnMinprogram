@@ -1,7 +1,10 @@
 {
   "pages":[
+    "pages/button/button",
+    "pages/text/text",
     "pages/index/index",
     "pages/logs/logs"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
