@@ -10,54 +10,63 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        name:'code why',
-        students:[{
-          id:1,
-          name:'jack'
-        },
-        {
-          id:2,
-          name:'luxi'
-        },
-        {
-          id:3,
-          name:'daxi'
-        }
-      ],
-      counter:0
-      },
- 
-   handleBtnclick(){
-        this.setData({
-          counter: this.data.counter+1
-        })
-      
-      },
-   handleBtnclick2(){
-        this.setData({
-          counter:this.data.counter-1
-        })
-      },
-      handleGetInfo(event){
-           console.log(event)
+    name: 'code why',
+    students: [{
+      id: 1,
+      name: 'jack'
+    },
+    {
+      id: 2,
+      name: 'luxi'
+    },
+    {
+      id: 3,
+      name: 'daxi'
+    }
+    ],
+    counter: 0,
+    list:[]
+  },
 
-      },
+  handleBtnclick() {
+    this.setData({
+      counter: this.data.counter + 1
+    })
+
+  },
+  handleBtnclick2() {
+    this.setData({
+      counter: this.data.counter - 1
+    })
+  },
+  handleGetInfo(event) {
+    console.log(event)
+
+  },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
   onLoad: function () {
     wx.request({
-      url: '',
+      //
+      url: 'https://www.runoob.com/try/ajax/json_demo.json',
+      success:(res)=>{
+         console.log(res)
+         const data =res.data.sites
+         this.setData({
+           list:data
+         })
+      }
     })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -78,9 +87,9 @@ Page({
         }
       })
     }
-  
+
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
