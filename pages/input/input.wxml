@@ -1,0 +1,16 @@
+<!--pages/input/input.wxml-->
+<text>pages/input/input.wxml</text>
+<input></input>
+<!-- value: -->
+<input value='hhh'></input>
+<!-- type -->
+<input type=""></input>
+<!-- password  默认true -->
+<input password> </input>
+<!-- placeholder -->
+<input placeholder="123"></input>
+<!-- input 事件 -->
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"
+></input>

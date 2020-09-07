@@ -3,3 +3,11 @@
   color: red;
   background: white;
 }
+.box1{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+.box1-class{
+  background: darkblue;
+}

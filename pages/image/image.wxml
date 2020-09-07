@@ -1,0 +1,14 @@
+<!--pages/image/image.wxml-->
+<text>pages/image/image.wxml</text>
+<!-- images的基本使用 -->
+<image src='../assets/img/m.jpg'></image>
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'/>
+<image src="{{imagePath}}"></image>
+<!-- 补充显示相册中的图片 -->
+<button bindtap="handleChooseAlbum" >an niu</button>
+<!-- bindload:监听图片加载完成  lazy-load -->
+<view>-----------------------------------------------</view>
+<image wx:for="{{1}}" src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' bindload="handImageLoad" lazy-load="{{true}}"></image>
+<!--show-menu-by-longpress 长按图片识别小程序二维码-->
+<image src='../assets/img/m.jpg' show-menu-by-longpress="true"></image>
+<!-- mode -->

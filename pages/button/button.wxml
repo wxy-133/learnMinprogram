@@ -15,3 +15,9 @@
 <button size='mini' loading="{{isLoading}}">按钮</button>
 <!-- hover-class -->
 <button hover-class="presed">按钮</button>
+<!--  -->
+<view>
+ 1111
+</view>
+<!-- hover-class -->
+<view hover-class="box1-class" hover-stay-time="{{0}}" class="box1">111</view>
