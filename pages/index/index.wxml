@@ -1,5 +1,12 @@
 <view class='title'>
 hwllo world
 </view>
-<button>an niu</button>
-<button>1111</button>
+<button bindtap="handSwitch" size="mini">切换显示</button>
+
+<button wx:if='{{isShow}}'>1111</button>
+<view wx:if="{{score>=90}}">great</view>
+<view wx:elif="{{score>=80}}">good</view>
+<view wx:else="{{score>=60}}">bad</view>
+
+<!-- hidden -->
+<view hidden="true">hidden   </view>

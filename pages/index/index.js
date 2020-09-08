@@ -7,12 +7,19 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    isShow:false,
+    score:98
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  handSwitch(){
+    this.setData({
+       isShow :!this.data.isShow
     })
   },
   onLoad: function () {
