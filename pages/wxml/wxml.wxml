@@ -1,0 +1,4 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+<view class="box {{isActive ? 'active':''}}" bindtap="handle">1111</view>
+<view>{{nowTime}}</view>
