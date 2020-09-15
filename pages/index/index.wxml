@@ -1,5 +1,13 @@
 <view class='title'>
 hwllo world
 </view>
-<button>an niu</button>
-<button>1111</button>
+<!-- wx:for -->
+<view wx:for="{{5}}" wx:key="num1">{{item}}</view>
+<view wx:for="{{5}}" wx:key="num2">{{item}}{{index}}</view>
+<!-- block -->
+<block wx:for='{{2}}' wx:key="item">
+   {{item}}
+
+</block>
+<!-- item/index -->
+<view wx:for="{{book}}" wx:for-item="book" wx:key='book' wx:for-index="i">>{{book}}{{i}}</view>

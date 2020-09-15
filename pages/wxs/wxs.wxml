@@ -1,0 +1,18 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+
+<!-- <wxs module="info">
+var foo = 'hello';
+var foo2 = 'world';
+var sum = function(num1,num2){
+  return num1 + num2
+}
+module.exports = {
+  foo:foo,
+  sum:sum
+}
+</wxs> -->
+<wxs src="../wxs/wxs.wxs" module="info"/>
+<view>{{info.foo}}</view>
+<view>{{info.sum(20,20)}}</view>
+<view>{{info.priceFormat(price)}}</view>

@@ -1,0 +1,11 @@
+<!--pages/template/template.wxml-->
+<text>pages/template/template.wxml</text>
+
+
+<template name="contetItem">
+ <button>{{buttonText}}</button>
+ <view>{{content}}</view>
+</template>
+
+<template is="contetItem" data="{{buttonText:'111',content:'111'}}">
+</template>

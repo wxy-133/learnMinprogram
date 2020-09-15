@@ -1,0 +1,15 @@
+
+var foo = 'hello';
+var foo2 = 'world';
+var sum = function(num1,num2){
+  return num1 + num2
+}
+function priceFormat(price,number){
+    var number =number || 2;
+      return price.toFixed(number)
+}
+module.exports = {
+  foo:foo,
+  sum:sum,
+  priceFormat:priceFormat
+}
