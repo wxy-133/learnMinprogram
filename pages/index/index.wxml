@@ -1,5 +1,11 @@
 <view class='title'>
 hwllo world
 </view>
-<button>an niu</button>
-<button>1111</button>
+<button bind:tap="handleBtnClick" size="min">handble</button>
+<button catch:tap="handleBtnClick" size="min">handble</button>
+<view class="box" bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove" bindtouchend="handleTouchEnd" bindtap="handleTab" bindlongpress="handleLongPress">
+</view>
+<button bindtap="handleEventClick" bindtouchend="handleTouchEnd">bb</button>
+<view class="outer" id="outer" bindtap="handleOuter">
+  <view class="inner" id="inner" bindtap="handleInner"></view>
+</view>

@@ -9,46 +9,40 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  handleBtnClick(){
+    console.log("cilck")
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+  handleTouchStart(){
+console.log("handleTouchStart")
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  handleTouchMove(){
+console.log("handleTouchMove")
+  },
+  handleTouchEnd(){
+console.log("handleTouchEnd")
+  },
+  handleTab(){
+console.log("handleTab")
+  },
+  handleLongPress(){
+console.log("handleLongPress")
+  },
+  handleEventClick(event){
+    console.log("handleEventClick",event)
+  },
+  handleTouchEnd(event){
+    console.log("+++++",event)
+  },
+  handleInner(event){
+    console.log(event)
+  },
+  handleOuter(event){
+    console.log(event)
   }
 })
