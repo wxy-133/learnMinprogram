@@ -9,3 +9,22 @@ hwllo world
 <view class="outer" id="outer" bindtap="handleOuter">
   <view class="inner" id="inner" bindtap="handleInner"></view>
 </view>
+<!-- 事件传递的参数 -->
+<view class="contain">
+<block wx:for="{{titles}}" wx:key="{{index}}" >
+   <view class="item" bindtap="handleItemClick" data-index="{{index}}" data-item="{{item}}">
+   {{item}}</view>
+</block>
+</view>
+<!-- 事件冒泡和事件捕获 -->
+<!-- <view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleView1">
+ <view class="view2" capture-bind:tap="handleCaptureView2" bindtap="handleView2">
+  <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleView3"></view>
+ </view>
+</view> -->
+
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleView1">
+ <view class="view2" capture-catch:tap="handleCaptureView2" bindtap="handleView2">
+  <view class="view3" capture-catch:tap="handleCaptureView3" bindtap="handleView3"></view>
+ </view>
+</view>
