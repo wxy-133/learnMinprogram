@@ -10,6 +10,9 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
+  "usingComponents":{
+    "my-cpn":"/componsnts/my-cpn/my-cpn"
+  },
   "sitemapLocation": "sitemap.json"
 
 }

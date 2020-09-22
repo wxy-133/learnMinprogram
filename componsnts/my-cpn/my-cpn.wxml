@@ -1,0 +1,4 @@
+<!--componsnts/compont/my-cpn.wxml-->
+
+<view class="content">content</view>
+<button>anniu</button>

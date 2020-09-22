@@ -1,5 +1,5 @@
 <view class='title'>
 hwllo world
 </view>
-<button>an niu</button>
-<button>1111</button>
+<!-- 使用自定义组件 -->
+<my-cpn></my-cpn>
