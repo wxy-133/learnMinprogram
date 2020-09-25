@@ -3,3 +3,7 @@ hwllo world
 </view>
 <!-- 使用自定义组件 -->
 <my-cpn></my-cpn>
+<my-style></my-style>
+<!-- 给自定义组件传递数据 -->
+<my-propertiew title='11111' titleclass='black'></my-propertiew>
+<my-propertiew content='222222'></my-propertiew>

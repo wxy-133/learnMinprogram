@@ -1,0 +1,11 @@
+/* componsnts/my-propertiew/my-propertiew.wxss */
+.title{
+  font-size: 50rpx;
+  
+}
+.content{
+  font-size: 30rpx;
+}
+.titleclass{
+  color:blue
+}

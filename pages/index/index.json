@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-   
+   "my-style":"/componsnts/mystyle/mystyle",
+   "my-propertiew":"/componsnts/my-propertiew/my-propertiew"
   }
 }

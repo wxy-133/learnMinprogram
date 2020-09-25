@@ -22,3 +22,6 @@
 .title{
   color: red;
 }
+.black{
+  color: black;
+}

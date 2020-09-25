@@ -1,0 +1,8 @@
+<!--componsnts/my-propertiew/my-propertiew.wxml-->
+<text>componsnts/my-propertiew/my-propertiew.wxml</text>
+<view class="title titleclass">
+  {{title}}
+</view>
+<view class="contents">
+{{content}}
+</view>
